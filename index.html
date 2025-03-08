@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alin Telco</title>
+  
+  <!-- Link ke Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    section {
+      min-height: 100vh; /* Setiap section akan memiliki tinggi 100% dari viewport */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    #home {
+      background: linear-gradient(to bottom, #00bcd4, #ffffff); /* Gradasi biru ke putih */
+      color: white;
+    }
+
+    #about {
+      background: #f1f8ff; /* Biru muda lembut */
+    }
+
+    #service {
+      background: #e3f2fd; /* Biru terang */
+    }
+
+    #contact {
+      background: #f1f8ff; /* Biru muda lembut */
+    }
+
+    .jumbotron {
+      height: 100vh; /* Membuat jumbotron menjadi setinggi layar */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #343a40; /* Warna navbar hitam/gelap */
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+    }
+
+    .navbar .navbar-brand {
+      color: white !important;
+    }
+
+    .navbar .navbar-toggler-icon {
+      background-color: white;
+    }
+
+    footer {
+      background-color: #343a40; /* Warna footer hitam/gelap */
+      color: white;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Alin Telco</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section (Jumbotron) -->
+  <header id="home" class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-4">Selamat datang di Alin Telco</h1>
+      <p class="lead">Kami menyediakan layanan telekomunikasi dan repair perangkat keras radio serta microwave yang terbaik untuk Anda.</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="text-center mb-4">Tentang Kami</h2>
+      <p class="text-center">Alin Telco adalah perusahaan yang bergerak di bidang telekomunikasi, khususnya dalam memperbaiki perangkat keras radio dan microwave. Kami menawarkan solusi terpercaya dan layanan berkualitas tinggi untuk memastikan kelancaran operasional perangkat telekomunikasi Anda.</p>
+    </div>
+  </section>
+
+  <!-- Service Section -->
+  <section id="service">
+    <div class="container">
+      <h2 class="text-center mb-4">Layanan Kami</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 1">
+            <div class="card-body">
+              <h5 class="card-title">Repair Radio</h5>
+              <p class="card-text">Kami menyediakan layanan perbaikan untuk perangkat radio yang digunakan dalam sistem telekomunikasi, memastikan perangkat Anda berfungsi optimal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 2">
+            <div class="card-body">
+              <h5 class="card-title">Repair Microwave</h5>
+              <p class="card-text">Layanan kami mencakup perbaikan perangkat microwave yang digunakan dalam jaringan komunikasi, dengan perhatian khusus pada kehandalan dan efisiensi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 3">
+            <div class="card-body">
+              <h5 class="card-title">Consultation Services</h5>
+              <p class="card-text">Kami juga menyediakan layanan konsultasi untuk kebutuhan telekomunikasi Anda, termasuk solusi perbaikan dan pemeliharaan perangkat keras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center mb-4">Kontak Kami</h2>
+      <p class="text-center">Jika Anda membutuhkan bantuan atau ingin bertanya lebih lanjut, silakan hubungi kami melalui detail berikut:</p>
+      <ul class="list-unstyled text-center">
+        <li>Email: info@alintelco.com</li>
+        <li>Telepon: 021-12345678</li>
+        <li>Alamat: Jl. Telekomunikasi No. 1, Jakarta, Indonesia</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Alin Telco. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Link ke Bootstrap 5.3.3 JS dan dependensi Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
