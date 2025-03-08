@@ -16,6 +16,12 @@
       align-items: center;
       padding: 20px;
     }
+    .sub-headline {
+        background: rgba(255, 255, 255, 0.3); /* Latar belakang transparan putih */
+        display: inline-block;
+        text-align: center;
+        color: #000;
+    }
 
     #home {
       background: linear-gradient(to bottom, #00bcd4, #ffffff); /* Gradasi biru ke putih */
@@ -25,13 +31,17 @@
     #about {
       background: #f1f8ff; /* Biru muda lembut */
     }
-
+    
     #service {
-      background: #e3f2fd; /* Biru terang */
+        background: #e3f2fd; /* Biru terang */
+    }
+    
+    #gallery{
+        background: #f1f8ff; /* Biru muda lembut */ 
     }
 
     #contact {
-      background: #f1f8ff; /* Biru muda lembut */
+      background: #e3f2fd; /* Biru muda lembut */
     }
 
     .jumbotron {
@@ -99,10 +109,15 @@
   </nav>
 
   <!-- Home Section (Jumbotron) -->
-  <header id="home" class="jumbotron text-center">
+<header id="home" class="jumbotron text-center">
     <div class="container">
       <h1 class="display-4">Selamat datang di Alin Telco</h1>
-      <p class="lead">Kami menyediakan layanan telekomunikasi dan repair perangkat keras radio serta microwave yang terbaik untuk Anda.</p>
+      <!-- Sub-Headline dari Gambar -->
+      <div class="sub-headline mt-4 p-4 rounded w-100">
+        <p>PT. Alin Telco Indonesia didirikan pada 5 April 2022 di bidang perbaikan peralatan telekomunikasi. Kami hadir untuk meningkatkan efisiensi biaya, waktu, dan operasional.</p>
+        <p>Didukung oleh para ahli di bidang telekomunikasi, elektronik, perangkat lunak, dan mikrokontroler.</p>
+        <p>Workshop kami dilengkapi dengan laboratorium, alat ukur, dan peralatan kerja modern.</p>
+      </div>
     </div>
   </header>
 
@@ -117,51 +132,127 @@
   <!-- Service Section -->
   <section id="service">
     <div class="container">
-      <h2 class="text-center mb-4">Layanan Kami</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 1">
-            <div class="card-body">
-              <h5 class="card-title">Repair Radio</h5>
-              <p class="card-text">Kami menyediakan layanan perbaikan untuk perangkat radio yang digunakan dalam sistem telekomunikasi, memastikan perangkat Anda berfungsi optimal.</p>
+        <h2 class="text-center mb-4">Layanan Kami</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="media/LEMBAR 4.jpg" class="card-img-top" alt="Repair Radio Transmisi Microwave">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Repair Radio Transmisi Microwave</h5>
+                        <p class="card-text">Kami menangani perbaikan dan optimasi radio transmisi microwave untuk memastikan keandalan dan efisiensi jaringan komunikasi jarak jauh Anda.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 2">
-            <div class="card-body">
-              <h5 class="card-title">Repair Microwave</h5>
-              <p class="card-text">Layanan kami mencakup perbaikan perangkat microwave yang digunakan dalam jaringan komunikasi, dengan perhatian khusus pada kehandalan dan efisiensi.</p>
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="media/LEMBAR 7.jpg" class="card-img-top" alt="Repair Access Network">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Repair Access Network</h5>
+                        <p class="card-text">Layanan kami mencakup pemeliharaan dan perbaikan jaringan akses agar tetap stabil, cepat, dan siap mendukung kebutuhan telekomunikasi Anda.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Service 3">
-            <div class="card-body">
-              <h5 class="card-title">Consultation Services</h5>
-              <p class="card-text">Kami juga menyediakan layanan konsultasi untuk kebutuhan telekomunikasi Anda, termasuk solusi perbaikan dan pemeliharaan perangkat keras.</p>
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="media/LEMBAR 6.jpg" class="card-img-top" alt="Repair Rectifier">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Repair Rectifier</h5>
+                        <p class="card-text">Kami menawarkan perbaikan dan pemeliharaan rectifier yang berperan penting dalam sistem daya telekomunikasi, memastikan suplai listrik tetap stabil dan aman.</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="media/LEMBAR 5.jpg" class="card-img-top" alt="Repair Transceiver Station">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Repair Transceiver Station</h5>
+                        <p class="card-text">Dukungan teknis profesional untuk memperbaiki dan meningkatkan performa transceiver station Anda, menjaga kualitas dan kestabilan komunikasi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="media/const.jpg" class="card-img-top" alt="Konsultasi Service">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">Konsultasi Service</h5>
+                        <p class="card-text">Tim ahli kami siap memberikan konsultasi teknis dan strategi pemeliharaan terbaik untuk kebutuhan telekomunikasi Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
+
+<section id="gallery" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Galeri</h2>
+        <div class="row">
+            <div class="col-md-4 col-6 mb-3">
+                <a href="media/GALERI 1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="media/GALERI 1.jpg">
+                    <img src="media/GALERI 1.jpg" class="img-fluid rounded shadow" alt="Portofolio 1">
+                </a>
+            </div>
+            <div class="col-md-4 col-6 mb-3">
+                <a href="media/GALERI 2.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="media/GALERI 2.jpg">
+                    <img src="media/GALERI 2.jpg" class="img-fluid rounded shadow" alt="Portofolio 2">
+                </a>
+            </div>
+            <div class="col-md-4 col-6 mb-3">
+                <a href="media/GALERI 3.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="media/GALERI 3.jpg">
+                    <img src="media/GALERI 3.jpg" class="img-fluid rounded shadow" alt="Portofolio 3">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal untuk Lightbox -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="galleryModalLabel">Detail Gambar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="" id="modalImage" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="text-center mb-4">Kontak Kami</h2>
-      <p class="text-center">Jika Anda membutuhkan bantuan atau ingin bertanya lebih lanjut, silakan hubungi kami melalui detail berikut:</p>
-      <ul class="list-unstyled text-center">
-        <li>Email: info@alintelco.com</li>
-        <li>Telepon: 021-12345678</li>
-        <li>Alamat: Jl. Telekomunikasi No. 1, Jakarta, Indonesia</li>
-      </ul>
-    </div>
-  </section>
+  <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+        <h2 class="text-center mb-4">Kontak Kami</h2>
+        <div class="row">
+            <!-- Kolom Pertama: Informasi Kontak -->
+            <div class="col-md-6">
+            <h5>Informasi Kontak</h5>
+            <ul class="list-unstyled">
+                <li><strong>Alamat:</strong> JL. Jengki No.7 RT.008/09 Kel. Kebon Pala, Kec. Makasar, Jakarta 13650, Indonesia</li>
+                <li><strong>Telepon:</strong> <a href="https://wa.me/62881025433501" target="_blank">0881-0254-33501</a></li>
+                <li><strong>Email:</strong> <a href="mailto:rahmanto@alintelco.com">rahmanto@alintelco.com</a></li>
+                <li><strong>Website:</strong> <a href="https://alintelco.com" target="_blank">alintelco.com</a></li>
+            </ul>
+            </div>
+            <!-- Kolom Kedua: Perizinan Perusahaan -->
+            <div class="col-md-6">
+            <h5>Perizinan Perusahaan</h5>
+            <ul class="list-unstyled">
+                <li><strong>Nama Perusahaan:</strong> PT. Alin Telco Indonesia</li>
+                <li><strong>NPWP:</strong> 69.926.611.3-005.000</li>
+                <li><strong>NIB:</strong> 1304/2200/24316</li>
+                <li><strong>Akta Pendirian:</strong> No. 08 tanggal 5 April 2022</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+  
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
@@ -170,5 +261,14 @@
 
   <!-- Link ke Bootstrap 5.3.3 JS dan dependensi Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+        // Script untuk mengganti gambar dalam modal saat thumbnail diklik
+        document.querySelectorAll('[data-bs-toggle="modal"]').forEach(item => {
+            item.addEventListener('click', event => {
+                let imgSrc = event.currentTarget.getAttribute('data-bs-image');
+                document.getElementById('modalImage').setAttribute('src', imgSrc);
+            });
+        });
+    </script>
 </body>
 </html>
